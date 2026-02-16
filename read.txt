@@ -1,0 +1,45 @@
+VARIABLES.CSS
+
+:root {
+  --bg-dark: #020617; main site background
+  --bg-dark-soft: #0f172a; sections, cards, overlays
+
+  improvements: bg-primary : bg-secondary
+
+  --brand-primary: #2563eb; Use primary for actions
+  --brand-accent: #38bdf8; Use accent for highlights / borders / glows
+
+  use case: buttons, links, highlights, hover states
+
+  --text-white: #f8fafc; headings on dark bg
+  --text-light: #cbd5f5; body text
+  --text-muted: #94a3b8; meta text, captions
+  --text-dark: #111827; light-background pages
+
+  --border-accent: rgba(56, 189, 248, 0.45);
+  --glow-accent: rgba(56, 189, 248, 0.35);
+
+  use cases: card borders, hover outlines, focus states, box-shadows
+}
+
+Small improvements (optional, not required)
+1️⃣ Add spacing tokens (very useful later)
+--space-xs: 8px;
+--space-sm: 16px;
+--space-md: 24px;
+--space-lg: 48px;
+--space-xl: 80px;
+
+
+Then you stop hardcoding padding everywhere.
+
+2️⃣ Add radius tokens
+--radius-sm: 8px;
+--radius-md: 16px;
+--radius-lg: 24px;
+
+
+You already use 16px a lot — this helps consistency.
+
+3️⃣ Add transition token
+--transition-base: 0.3s ease;

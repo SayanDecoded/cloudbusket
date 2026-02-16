@@ -1,0 +1,123 @@
+.about-hero {
+  padding: 100px 20px 80px;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  color: var(--text-white);
+}
+
+.about-hero-subtitle {
+  max-width: 760px;
+  margin: 18px auto 32px;
+  font-size: 18px;
+  color: var(--text-light);
+}
+
+.about-hero-cta {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Sections */
+.about-section {
+  padding: 80px 20px;
+}
+
+.about-dark {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.about-light {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.about-narrow {
+  max-width: 800px;
+}
+
+/* Founder */
+.founder-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.founder-skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.skill-badge {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Methodology */
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+  margin-top: 42px;
+}
+
+.method-card {
+  padding: 26px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: 0.3s ease;
+}
+
+.method-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* Industries */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.industry-card {
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* CTA */
+.about-cta {
+  padding: 90px 20px;
+  text-align: center;
+  background: linear-gradient(135deg,
+      rgba(56, 189, 248, 0.15),
+      rgba(37, 99, 235, 0.15));
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+  .founder-layout,
+  .approach-grid,
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+}

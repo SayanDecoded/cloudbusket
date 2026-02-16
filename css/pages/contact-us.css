@@ -1,0 +1,270 @@
+.contact-hero {
+  background: radial-gradient(circle at right,
+      rgba(56, 189, 248, 0.15),
+      var(--bg-dark));
+  padding: 120px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* LEFT SIDE */
+.contact-content h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  color: var(--text-white);
+  margin-bottom: 24px;
+}
+
+.contact-content p {
+  max-width: 460px;
+  color: var(--text-light);
+  margin-bottom: 60px;
+}
+
+.trusted span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.trusted-logos {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  opacity: 0.6;
+}
+
+/* RIGHT FORM CARD */
+.contact-form-card {
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 36px;
+  backdrop-filter: blur(14px);
+}
+
+/* ================== CONTACT US: SUBMIT FORM ================== */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: var(--text-light);
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: var(--text-white);
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.25);
+}
+
+/* SUBMIT */
+.submit-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 14px;
+  font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-content h1 {
+    font-size: 42px;
+  }
+}
+
+/* ================== CONTACT US: CONTACT VIA US ================== */
+
+.alt-contact {
+  margin-top: 32px;
+}
+
+.alt-contact h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-white);
+  margin-bottom: 16px;
+}
+
+.alt-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.alt-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  height: 74px;
+  /* 🔥 forces equal height */
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* Icon container */
+.alt-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.alt-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--text-light);
+}
+
+/* Text */
+.alt-contact-item strong {
+  font-size: 13px;
+  color: var(--text-white);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.alt-contact-item p,
+.alt-contact-item a {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-light);
+  margin: 0;
+  text-decoration: none;
+}
+
+.alt-contact-item a:hover {
+  color: var(--brand-accent);
+}
+
+
+/* ================== CONTACT US: SUBMIT FORM CHECKBOX ================== */
+
+.form-checkboxes {
+  margin: 22px 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+/* Hide default checkbox */
+.checkbox input {
+  display: none;
+}
+
+/* Custom checkbox */
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Check state */
+.checkbox input:checked+.checkmark {
+  background: linear-gradient(90deg,
+      var(--brand-primary),
+      var(--brand-accent));
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+}
+
+.checkbox input:checked+.checkmark::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Text block */
+.checkbox-text {
+  display: inline;
+  line-height: 1.5;
+}
+
+/* Keep "Privacy Policy" together */
+.checkbox-text a {
+  white-space: nowrap;
+  color: var(--brand-accent);
+  text-decoration: underline;
+}
+
+.checkbox-text a:hover {
+  text-decoration: none;
+}
+
+.required {
+  color: var(--brand-accent);
+  font-weight: 700;
+}
+
+
+/* Links */
+.checkbox a {
+  color: var(--brand-accent);
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.checkbox a:hover {
+  text-decoration: none;
+}

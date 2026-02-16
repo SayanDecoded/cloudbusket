@@ -1,0 +1,15 @@
+:root {
+  --bg-dark: #020617;
+  --bg-dark-soft: #0f172a;
+
+  --brand-primary: #2563eb;
+  --brand-accent: #38bdf8;
+
+  --text-white: #f8fafc;
+  --text-light: #cbd5f5;
+  --text-muted: #94a3b8;
+  --text-dark: #111827;
+
+  --border-accent: rgba(56, 189, 248, 0.45);
+  --glow-accent: rgba(56, 189, 248, 0.35);
+}

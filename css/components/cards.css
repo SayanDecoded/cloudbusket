@@ -1,0 +1,52 @@
+.service-dark-card,
+.why-choose-card {
+  padding: 34px 28px;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  color: var(--text-light);
+  transition: 0.35s ease;
+}
+
+.service-dark-card:hover,
+.why-choose-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--brand-accent);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.capability-card {
+  padding: 22px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.capability-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-accent);
+}
+
+/* ===============================
+   Mobile Card Optimization
+================================ */
+
+@media (max-width: 768px) {
+
+  .service-dark-card,
+  .why-choose-card {
+    padding: 24px 18px;
+  }
+
+  .capability-card {
+    padding: 18px 16px;
+  }
+
+}

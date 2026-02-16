@@ -1,0 +1,44 @@
+.services-cta {
+  padding: 100px 0px;
+  background: linear-gradient(180deg, var(--bg-dark-soft), var(--bg-dark));
+}
+
+.services-cta h2 {
+  font-size: 40px;
+  color: var(--text-white);
+  margin-bottom: 18px;
+}
+
+.services-cta p {
+  color: var(--text-light);
+  margin-bottom: 28px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ===============================
+   CTA Mobile Fix
+================================ */
+
+@media (max-width: 768px) {
+
+  .services-cta {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+ .services-cta h2 {
+  font-size: clamp(24px, 5vw, 40px);
+}
+
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

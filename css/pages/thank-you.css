@@ -1,0 +1,77 @@
+.thank-you-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at top, var(--bg-dark-soft), var(--bg-dark));
+  padding: 60px 20px;
+}
+
+.thank-you-container {
+  max-width: 720px;
+}
+
+.thank-you-container h1 {
+  font-size: 48px;
+  color: var(--text-white);
+  margin-bottom: 16px;
+}
+
+.thank-you-message {
+  font-size: 20px;
+  color: var(--text-light);
+  margin-bottom: 40px;
+}
+
+.thank-you-social h3 {
+  color: var(--text-white);
+  margin-bottom: 20px;
+}
+
+.thank-you-btn {
+  display: inline-block;
+  margin: 24px auto 40px;
+  padding: 14px 32px;
+  background: var(--brand-accent);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.thank-you-btn:hover {
+  background: #ffffff;
+  color: var(--brand-accent);
+  transform: translateY(-2px);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: var(--brand-accent);
+  transform: translateY(-3px);
+}
+
+.social-icons svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
